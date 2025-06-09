@@ -12,52 +12,52 @@
     <style>
         /* CSS Custom Properties for Theming */
         :root {
-            --bg: #F8F9FA; /* Lightest Gray, almost white */
-            --text: #343A40; /* Dark Charcoal */
-            --accent: #C32E55; /* Heritage Brand Red */
-            --accent-darker: #9D2646; /* Slightly darker Heritage Red */
-            --card-bg: #FFFFFF; /* Pure white for cards */
-            --card-shadow-light: rgba(0, 0, 0, 0.08); /* Softer shadow */
-            --card-shadow-dark: rgba(0, 0, 0, 0.02); /* Very subtle dark shadow */
-            --neumorphic-inset-light: rgba(0, 0, 0, 0.05); /* Very subtle inset light */
-            --neumorphic-inset-dark: rgba(255, 255, 255, 0.5); /* Very subtle inset dark */
-            --button-shadow-color: rgba(195, 46, 85, 0.3); /* Accent-based button shadow */
-            --button-hover-shadow-color: rgba(195, 46, 85, 0.5); /* Stronger accent hover shadow */
-            --glass-bg: rgba(255, 255, 255, 0.6); /* More opaque for readability, still translucent */
-            --glass-border: rgba(255, 255, 255, 0.8); /* Defined border */
-            --header-shadow: rgba(0,0,0,0.03); /* Lighter header shadow */
-            --scroll-bg: #E9ECEF; /* Light gray for scroll-like elements */
-            --positive-color: #28A745; /* Green */
-            --negative-color: #DC3545; /* Red */
-            --neutral-color: #6C757D; /* Medium Gray */
-            --toggle-bg: #E9ECEF; /* Light toggle background */
-            --toggle-circle: #FFFFFF; /* White circle */
-            --toggle-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            --text-rgb-values: 52, 58, 64; /* Raw RGB values for text color */
+            --bg: #F0F2F5; /* Light Gray from perbaikan.html */
+            --text: #333; /* Dark Gray from perbaikan.html */
+            --accent: #007bff; /* Blue as requested */
+            --accent-darker: #0056b3; /* Darker shade of blue */
+            --card-bg: #F0F2F5; /* Same as bg for light neumorphic from perbaikan.html */
+            --card-shadow-light: #d1d9e6; /* From perbaikan.html */
+            --card-shadow-dark: #b8c2d1; /* From perbaikan.html */
+            --neumorphic-inset-light: #cad1d9; /* From perbaikan.html */
+            --neumorphic-inset-dark: #e9f0f7; /* From perbaikan.html */
+            --button-shadow-color: rgba(0, 123, 255, 0.3); /* Derived from new accent */
+            --button-hover-shadow-color: rgba(0, 123, 255, 0.5); /* Derived from new accent */
+            --glass-bg: rgba(255, 255, 255, 0.6); /* Kept for chart-container transparency */
+            --glass-border: rgba(255, 255, 255, 0.8); /* Kept for chart-container border */
+            --header-shadow: rgba(0,0,0,0.05); /* From perbaikan.html */
+            --scroll-bg: #E9ECEF; /* From perbaikan.html */
+            --positive-color: #28A745; /* Keep existing */
+            --negative-color: #DC3545; /* Keep existing */
+            --neutral-color: #6C757D; /* Keep existing */
+            --toggle-bg: #F0F2F5; /* Match bg */
+            --toggle-circle: #FFFFFF; /* Keep existing */
+            --toggle-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Keep existing */
+            --text-rgb-values: 51, 51, 51; /* Match --text */
         }
 
         html[data-theme='dark'] {
-            --bg: #1A1A2E; /* Dark blue background */
-            --text: #E0E0E0; /* Light gray text */
-            --accent: #D04A50; /* Heritage Red adapted for dark mode */
-            --accent-darker: #B03F44; /* Darker Heritage Red for dark mode */
-            --card-bg: #2C2C40; /* Darker card background */
-            --card-shadow-light: rgba(0, 0, 0, 0.4); /* Deeper shadow for dark mode */
-            --card-shadow-dark: rgba(0, 0, 0, 0.15); /* Subtle dark shadow */
-            --neumorphic-inset-light: rgba(0, 0, 0, 0.3);
-            --neumorphic-inset-dark: rgba(255, 255, 255, 0.05);
-            --button-shadow-color: rgba(208, 74, 80, 0.3);
-            --button-hover-shadow-color: rgba(208, 74, 80, 0.5);
-            --glass-bg: rgba(44, 44, 64, 0.6);
-            --glass-border: rgba(255, 255, 255, 0.1);
-            --header-shadow: rgba(255,255,255,0.03);
-            --scroll-bg: #222238;
-            --positive-color: #2ECC71; /* Brighter Green */
-            --negative-color: #E74C3C; /* Brighter Red */
-            --neutral-color: #ADB5BD; /* Lighter Gray */
-            --toggle-bg: #3F3F5A;
-            --toggle-circle: #E0E0E0;
-            --text-rgb-values: 224, 224, 224; /* Raw RGB values for text color in dark mode */
+            --bg: #000000; /* Pure black as requested */
+            --text: #C4C7D0; /* From perbaikan.html */
+            --accent: #66b2ff; /* Blue adapted for dark mode from perbaikan.html */
+            --accent-darker: #007bff; /* Darker shade of blue for dark mode */
+            --card-bg: #2A2E3D; /* Darker than pure black bg for neumorphic effect from perbaikan.html */
+            --card-shadow-light: #1c1f28; /* From perbaikan.html */
+            --card-shadow-dark: #32374c; /* From perbaikan.html */
+            --neumorphic-inset-light: #282b3a; /* From perbaikan.html */
+            --neumorphic-inset-dark: #222533; /* From perbaikan.html */
+            --button-shadow-color: rgba(102, 178, 255, 0.3); /* Derived from new accent */
+            --button-hover-shadow-color: rgba(102, 178, 255, 0.5); /* Derived from new accent */
+            --glass-bg: rgba(42, 46, 61, 0.6); /* Kept for chart-container transparency */
+            --glass-border: rgba(255, 255, 255, 0.1); /* Kept for chart-container border */
+            --header-shadow: rgba(0,0,0,0.3); /* From perbaikan.html */
+            --scroll-bg: #222238; /* From perbaikan.html */
+            --positive-color: #2ECC71; /* Keep existing */
+            --negative-color: #E74C3C; /* Keep existing */
+            --neutral-color: #ADB5BD; /* Keep existing */
+            --toggle-bg: #222533; /* Match perbaikan.html's original dark bg */
+            --toggle-circle: #E0E0E0; /* Keep existing */
+            --text-rgb-values: 196, 199, 208; /* Match --text */
         }
 
         * {
@@ -139,9 +139,8 @@
             background-color: var(--card-bg);
         }
 
-        /* Apply neumorphic-panel and glass-panel to relevant sections */
-        .report-header, .section, .metric-card, .chart-container,
-        .problem-box, .solution-box, .key-insights, .performance-indicator {
+        /* Apply neumorphic-panel to relevant sections, glass-panel only for charts */
+        .report-header, .section, .metric-card, .problem-box, .solution-box, .key-insights, .performance-indicator {
             padding: 30px;
             margin-bottom: 30px;
             color: var(--text);
@@ -474,6 +473,34 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        /* Hero Image Styles */
+        .hero-image-wrapper {
+            width: 250px; /* Fixed width for the square container */
+            height: 250px; /* Fixed height for a perfect square */
+            margin: 20px auto; /* Center and add margin */
+            position: relative;
+            overflow: hidden; /* Hide parts of image if not perfectly square */
+            border-radius: 16px; /* Match panel radius */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Soft shadow for the container */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hero-image-wrapper:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Crops image to fit the square container */
+            border-radius: 0; /* Ensures square shape within the wrapper */
+            display: block;
+        }
+
         /* Footer styles */
         .page-footer {
             text-align: center;
@@ -488,7 +515,7 @@
 
         @media (max-width: 768px) {
             body {
-                padding-top: 100px; /* Adjust for smaller screens where header might wrap */
+                padding-top: 90px; /* Adjust for smaller fixed header */
             }
             .fixed-header {
                 flex-direction: column;
@@ -508,8 +535,24 @@
                 font-size: 2em;
             }
             
+            .report-subtitle {
+                font-size: 1.1em; /* Smaller subtitle on mobile */
+            }
+
+            .section-title {
+                font-size: 1.6em; /* Smaller section title on mobile */
+            }
+
             .metrics-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .metric-value {
+                font-size: 2.2em; /* Smaller metric value on mobile */
+            }
+
+            .metric-label {
+                font-size: 1em; /* Smaller metric label on mobile */
             }
 
             .lang-toggle-container, .theme-toggle-container {
@@ -520,11 +563,27 @@
                 margin: 0;
             }
             .section {
-                padding: 20px; /* Reduce padding on small screens */
+                padding: 15px; /* Reduce padding on small screens */
             }
             .chart-container {
-                height: 350px; /* Adjust height for mobile */
-                padding: 15px;
+                height: 300px; /* Adjust height for mobile */
+                padding: 10px;
+            }
+            .hero-image-wrapper {
+                width: 150px; /* Smaller square image on mobile */
+                height: 150px;
+                margin: 15px auto; /* Adjust margin for mobile */
+            }
+            .problem-box, .solution-box, .key-insights, .timeline-item {
+                padding: 15px; /* Adjust padding for mobile */
+            }
+            .timeline-item::before {
+                left: 5px; /* Adjust dot position on mobile */
+                width: 15px;
+                height: 15px;
+            }
+            .timeline {
+                padding-left: 20px; /* Adjust timeline line position on mobile */
             }
         }
     </style>
@@ -550,9 +609,14 @@
         </div>
     </div>
 
+    <!-- Hero Image Placement -->
+    <div class="hero-image-wrapper">
+        <img src="https://raw.githubusercontent.com/HadiBandas/my-portfolio-june25/main/image/Hadi1.webp" alt="[Image of Mahasin Hadiyatulloh]" class="hero-image" onerror="this.onerror=null;this.src='https://placehold.co/300x300/e0e0e0/333333?text=Profile+Image';">
+    </div>
+
     <div class="container">
         <div id="en-content" class="content-en">
-            <div class="report-header neumorphic-panel glass-panel">
+            <div class="report-header neumorphic-panel">
                 <h1 class="report-title">Strategic Cross-Promotion Initiative</h1>
                 <p class="report-subtitle">Transforming Traffic Challenges into Revenue Growth Through Strategic Partnership</p>
                 <div class="author-info">
@@ -560,7 +624,7 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Executive Summary</h2>
                 <p>This report outlines a highly successful cross-promotion between Heritage Factory Outlet Bintaro and Wheels Coffee Roastery. Following Heritage's relocation from a 3000m² standalone building to a 300m² first-floor space (above Wheels Coffee), the program strategically leveraged ground-floor traffic. It achieved <span class="highlight-text">134% of target revenue</span> and operated <span class="highlight-text">53% below budget</span>, showcasing effective customer conversion and flow management.</p>
                 
@@ -588,16 +652,16 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Challenge Analysis</h2>
                 <p>Heritage Factory Outlet's relocation from a 3000m² building to a 300m² first-floor space (above Wheels Coffee) led to a critical traffic challenge. Despite a **400%+ increase** in total building traffic due to Wheels Coffee on the ground floor, direct visits to Heritage proportionally decreased. This necessitated a strategic intervention to redirect ground-floor traffic upstairs.</p>
                 
                 <div class="problem-solution">
-                    <div class="problem-box neumorphic-panel glass-panel">
+                    <div class="problem-box neumorphic-panel">
                         <h3 style="color: var(--negative-color); margin-bottom: 15px;">The Challenge</h3>
                         <p>Heritage Factory Outlet relocated from a 3000m² standalone building to a 300m² first-floor space. Despite total building traffic increasing by **over 400%** (driven by ground-floor Wheels Coffee), direct traffic to Heritage proportionally decreased. This anomaly highlighted an urgent need to redirect ground-floor visitors to the first-floor outlet.</p>
                     </div>
-                    <div class="solution-box neumorphic-panel glass-panel">
+                    <div class="solution-box neumorphic-panel">
                         <h3 style="color: var(--positive-color); margin-bottom: 15px;">The Opportunity</h3>
                         <p>Despite fewer direct visitors, the conversion rate surged from <strong>17% to 56%</strong>, indicating high-quality visitors. The opportunity was clear: effectively channel Wheels Coffee's dominant ground-floor traffic (96% of building visitors) *upwards* to become Heritage customers on the first floor.</p>
                     </div>
@@ -607,7 +671,7 @@
                     <canvas id="trafficChartEN"></canvas>
                 </div>
 
-                <div class="key-insights neumorphic-panel glass-panel">
+                <div class="key-insights neumorphic-panel">
                     <h3 style="margin-bottom: 15px;">Key Insights from Data Analysis</h3>
                     <div class="performance-indicator positive">
                         <span><strong>Building Traffic Growth:</strong> Over 400% increase in visitors</span>
@@ -628,7 +692,7 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Strategic Implementation</h2>
                 <p>The solution involved developing and executing a comprehensive cross-promotion program as a strategic bridge. My role covered the entire project lifecycle, from analysis to evaluation.</p>
                 
@@ -656,7 +720,7 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Results & Business Impact</h2>
                 <p>The program (April 28 - May 31, 2025) delivered exceptional results, significantly exceeding targets and validating the strategic approach.</p>
 
@@ -664,7 +728,7 @@
                     <canvas id="resultsChartEN"></canvas>
                 </div>
 
-                <div class="key-insights neumorphic-panel glass-panel">
+                <div class="key-insights neumorphic-panel">
                     <h3 style="margin-bottom: 15px;">Financial Performance Highlights</h3>
                     <div class="performance-indicator positive">
                         <span><strong>Revenue Target Achievement:</strong> 134% of target</span>
@@ -693,11 +757,11 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Strategic Impact & Learning</h2>
                 <p>Beyond financial success, this initiative offered valuable insights into customer behavior and validated cross-tenant collaboration effectiveness.</p>
                 
-                <div class="key-insights neumorphic-panel glass-panel">
+                <div class="key-insights neumorphic-panel">
                     <h3 style="margin-bottom: 15px;">Customer Behavior Transformation</h3>
                     <p>The program successfully transformed low-spending Wheels customers into high-value Heritage shoppers, increasing average order values by 142%. This highlights effective cross-promotion in elevating spending and driving traffic to the less visible first floor.</p>
                     
@@ -713,13 +777,13 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Conclusion & Future Applications</h2>
                 <p>This cross-promotion marks a paradigm shift in leveraging adjacent business traffic for revenue growth, especially during relocation challenges to less prominent spots. The program validates converting existing building traffic, even across floors, over costly external acquisition.</p>
                 
                 <p style="margin-top: 20px;">The exceptional ROI and 27% contribution to total outlet revenue during the period underscore the scalable potential of this collaborative model. It not only resolved declining traffic from relocation but also created a replicable framework for driving customer flow from busy ground floors to upper levels at other Heritage locations.</p>
                 
-                <div class="key-insights neumorphic-panel glass-panel">
+                <div class="key-insights neumorphic-panel">
                     <h3 style="margin-bottom: 15px;">Key Success Factors</h3>
                     <p><strong>Data-Driven Decision Making:</strong> Comprehensive traffic analysis enabled precise targeting and resource allocation.</p>
                     <p><strong>Cross-Functional Leadership:</strong> Effective coordination across multiple teams ensured seamless execution.</p>
@@ -730,7 +794,7 @@
         </div>
 
         <div id="id-content" class="content-id">
-            <div class="report-header neumorphic-panel glass-panel">
+            <div class="report-header neumorphic-panel">
                 <h1 class="report-title">Inisiatif Promosi Silang Strategis</h1>
                 <p class="report-subtitle">Mengubah Tantangan Lalu Lintas Menjadi Pertumbuhan Pendapatan Melalui Kemitraan Strategis</p>
                 <div class="author-info">
@@ -738,7 +802,7 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Ringkasan Eksekutif</h2>
                 <p>Laporan ini merinci inisiatif promosi silang yang sangat sukses antara Heritage Factory Outlet Bintaro dan Wheels Coffee Roastery. Menyusul relokasi Heritage dari gedung mandiri 3000m² ke ruang 300m² di lantai satu (di atas Wheels Coffee), program ini secara strategis memanfaatkan lalu lintas lantai dasar. Program ini mencapai <span class="highlight-text">134% dari target pendapatan</span> dan beroperasi <span class="highlight-text">53% di bawah anggaran</span>, menunjukkan konversi pelanggan yang efektif dan pengelolaan aliran pengunjung.</p>
                 
@@ -766,15 +830,15 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Analisis Tantangan</h2>
                 <p>Relokasi Heritage Factory Outlet dari gedung 3000m² ke ruang 300m² di lantai satu (di atas Wheels Coffee) menciptakan tantangan lalu lintas krusial. Meskipun lalu lintas total gedung meningkat **lebih dari 400%** berkat Wheels Coffee di lantai dasar, jumlah pengunjung langsung ke Heritage secara proporsional menurun. Ini menuntut intervensi strategis untuk mengarahkan lalu lintas lantai dasar ke atas.</p>
                 <div class="problem-solution">
-                    <div class="problem-box neumorphic-panel glass-panel">
+                    <div class="problem-box neumorphic-panel">
                         <h3 style="color: var(--negative-color); margin-bottom: 15px;">Tantangan</h3>
                         <p>Heritage Factory Outlet berpindah dari gedung mandiri 3000m² ke ruang 300m² di lantai satu. Meskipun lalu lintas total gedung meningkat **lebih dari 400%** (didominasi Wheels Coffee di lantai dasar), lalu lintas langsung ke Heritage secara proporsional menurun. Anomali ini menunjukkan kebutuhan mendesak untuk mengarahkan pengunjung lantai dasar ke outlet di lantai satu.</p>
                     </div>
-                    <div class="solution-box neumorphic-panel glass-panel">
+                    <div class="solution-box neumorphic-panel">
                         <h3 style="color: var(--positive-color); margin-bottom: 15px;">Peluang</h3>
                         <p>Meskipun pengunjung langsung berkurang, tingkat konversi melonjak dari <strong>17% menjadi 56%</strong>, menandakan pengunjung berkualitas tinggi. Peluangnya jelas: secara efektif menyalurkan lalu lintas dominan Wheels Coffee di lantai dasar (96% pengunjung gedung) *ke atas* untuk menjadi pelanggan Heritage di lantai satu.</p>
                     </div>
@@ -784,7 +848,7 @@
                     <canvas id="trafficChartID"></canvas>
                 </div>
 
-                <div class="key-insights neumorphic-panel glass-panel">
+                <div class="key-insights neumorphic-panel">
                     <h3 style="margin-bottom: 15px;">Wawasan Utama dari Analisis Data</h3>
                     <div class="performance-indicator positive">
                         <span><strong>Pertumbuhan Lalu Lintas Gedung:</strong> Peningkatan pengunjung lebih dari 400%</span>
@@ -795,7 +859,7 @@
                         <span>↓ Menurun secara proporsional</span>
                     </div>
                     <div class="performance-indicator positive">
-                        <span><strong>Tingkat Konversi:</strong> 56% (dari 17%)</span>
+                        <span><strong>Tingkat Konversi:</strong> 56% (from 17%)</span>
                         <span>↑ 229%</span>
                     </div>
                     <div class="performance-indicator neutral">
@@ -805,7 +869,7 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Implementasi Strategis</h2>
                 <p>Solusinya melibatkan pengembangan dan pelaksanaan program promosi silang sebagai jembatan strategis. Peran saya meliputi seluruh siklus proyek, dari analisis hingga evaluasi.</p>
                 
@@ -833,7 +897,7 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Hasil & Dampak Bisnis</h2>
                 <p>Program ini (28 April - 31 Mei 2025) memberikan hasil luar biasa, melampaui target secara signifikan dan memvalidasi pendekatan strategis.</p>
 
@@ -841,7 +905,7 @@
                     <canvas id="resultsChartID"></canvas>
                 </div>
 
-                <div class="key-insights neumorphic-panel glass-panel">
+                <div class="key-insights neumorphic-panel">
                     <h3 style="margin-bottom: 15px;">Sorotan Kinerja Keuangan</h3>
                     <div class="performance-indicator positive">
                         <span><strong>Pencapaian Target Pendapatan:</strong> 134% dari target</span>
@@ -870,11 +934,11 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Dampak Strategis & Pembelajaran</h2>
                 <p>Selain keberhasilan finansial, inisiatif ini memberikan wawasan berharga tentang perilaku pelanggan dan memvalidasi efektivitas kolaborasi lintas penyewa.</p>
                 
-                <div class="key-insights neumorphic-panel glass-panel">
+                <div class="key-insights neumorphic-panel">
                     <h3 style="margin-bottom: 15px;">Transformasi Perilaku Pelanggan</h3>
                     <p>Program ini berhasil mengubah pelanggan Wheels dengan pengeluaran rendah menjadi pembeli Heritage bernilai tinggi, meningkatkan nilai pesanan rata-rata sebesar 142%. Ini menyoroti efektivitas promosi silang dalam meningkatkan pengeluaran dan mengarahkan lalu lintas ke lantai satu yang kurang terlihat.</p>
                     
@@ -890,13 +954,13 @@
                 </div>
             </div>
 
-            <div class="section neumorphic-panel glass-panel">
+            <div class="section neumorphic-panel">
                 <h2 class="section-title">Kesimpulan & Aplikasi Masa Depan</h2>
                 <p>Promosi silang ini menandai perubahan paradigma dalam memanfaatkan lalu lintas bisnis yang berdekatan untuk pertumbuhan pendapatan, terutama saat relokasi ke lokasi yang kurang menonjol. Program ini memvalidasi konversi lalu lintas gedung, bahkan antar lantai, dibandingkan akuisisi eksternal yang mahal.</p>
                 
                 <p style="margin-top: 20px;">ROI yang luar biasa dan kontribusi 27% terhadap total pendapatan outlet selama periode ini menggarisbawahi potensi skalabel model kolaborasi ini. Ini tidak hanya mengatasi penurunan lalu lintas akibat relokasi tetapi juga menciptakan kerangka kerja yang dapat direplikasi untuk kemitraan serupa di lokasi Heritage lainnya, membuktikan kelayakan mengarahkan aliran pelanggan dari lantai dasar yang ramai ke lantai atas.</p>
                 
-                <div class="key-insights neumorphic-panel glass-panel">
+                <div class="key-insights neumorphic-panel">
                     <h3 style="margin-bottom: 15px;">Faktor-faktor Kunci Keberhasilan</h3>
                     <p><strong>Pengambilan Keputusan Berbasis Data:</strong> Analisis lalu lintas komprehensif memungkinkan penargetan dan alokasi sumber daya yang tepat.</p>
                     <p><strong>Kepemimpinan Lintas Fungsi:</strong> Koordinasi yang efektif di berbagai tim memastikan seamless execution.</p>
@@ -1182,7 +1246,6 @@
                 }
             });
 
-            // Fixed the typo here: removed "document = "
             const geoCtxID = document.getElementById('geographicChartID').getContext('2d');
             charts.geographicID = new Chart(geoCtxID, {
                 type: 'pie',
